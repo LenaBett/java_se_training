@@ -96,6 +96,11 @@ public class variablesDemo {
         demo.floatingTypes();
         demo.characterTypes();
         demo.booleanTypes();
+
+        long a = 2147483648L;
+        
+        int b = (int) a;
+        LOGGER.info("int value value is:" + b);
     
     }      
 }
