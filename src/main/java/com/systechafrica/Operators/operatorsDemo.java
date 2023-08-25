@@ -82,6 +82,12 @@ public class operatorsDemo {
         LOGGER.info("IsStudentOneAgeGreaterThanOrEqualToStudentTwoAge: " + isStudentOneAgeGreaterThanOrEqualToStudentTwoAge);
     }
 
+    public void logicalOperatore(){
+        
+
+
+    }
+
     public static void main(String[] args) {
         operatorsDemo app = new operatorsDemo();
         app.arithmeticOperators();
