@@ -12,7 +12,7 @@ public class App {
         LOGGER.info( "Hello World!" );
     }
 
-    public int add(int a, int b){
+    public int addNumbers(int a, int b){
         return a + b;
 
     }

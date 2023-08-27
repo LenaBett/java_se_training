@@ -82,9 +82,45 @@ public class operatorsDemo {
         LOGGER.info("IsStudentOneAgeGreaterThanOrEqualToStudentTwoAge: " + isStudentOneAgeGreaterThanOrEqualToStudentTwoAge);
     }
 
-    public void logicalOperatore(){
-        
+    public void andLogicalOperator(){
+        int studentOneAge = 17;
+        int studentTwoAge = 25;
 
+        boolean isStudentOneAllowed = studentOneAge >= 18;
+        boolean isStudentTwoAllowed =studentTwoAge >= 18;
+
+        // AND operator
+        if(isStudentOneAllowed && isStudentTwoAllowed){
+            LOGGER.info("Students allowed for ID registration");
+            }else{
+                LOGGER.info("Not allowed for registration");
+            }
+
+    }
+
+ public void orLogicalOperator(){
+        int studentOneAge = 17;
+        int studentTwoAge = 25;
+
+        boolean isStudentOneAllowed = studentOneAge >= 18;
+        boolean isStudentTwoAllowed = studentTwoAge >= 18;
+        // or operator
+        if (isStudentOneAllowed || isStudentTwoAllowed) {
+            LOGGER.info("Students allowed  for ID registration");
+        } else {
+            LOGGER.info("Not allowed  for ID registration");
+        }
+     }
+
+ public void notLogicalOperator(){
+        int studentOneAge = 17;
+        boolean isStudentOneAllowed = studentOneAge >= 18;
+        // and operator
+        if (!isStudentOneAllowed) {
+            LOGGER.info("Students allowed  for ID registration");
+        } else {
+            LOGGER.info("Not allowed  for ID registration");
+        }
 
     }
 
@@ -92,7 +128,9 @@ public class operatorsDemo {
         operatorsDemo app = new operatorsDemo();
         app.arithmeticOperators();
         app.assignmentOperators();
-        app.comparisonOperators();
-    
+        app.comparisonOperators(); 
+        app.andLogicalOperator();
+        app.orLogicalOperator();
+        app.notLogicalOperator();
     }
 }
