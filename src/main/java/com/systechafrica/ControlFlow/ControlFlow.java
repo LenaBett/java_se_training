@@ -6,7 +6,7 @@ public class ControlFlow {
     private static final Logger LOGGER = Logger.getLogger(ControlFlow.class.getName());
 
     public void ifelseStatement() {
-        int maths = 36;
+        int maths = 58;
         char grade;
 
         if (maths >= 70) {
@@ -14,13 +14,13 @@ public class ControlFlow {
         }
         //! Assignment: add conditions here to assign grade variable as expected
         // Solution:
-        else if (maths >=60) {
+        else if (maths >=60 && maths <= 69) {
                 grade = 'B';
         }
-        else if (maths >= 50){
+        else if (maths >= 50 && maths <= 59){
                 grade = 'C';
         }
-        else if (maths >= 40){
+        else if (maths >= 40 && maths <= 49){
                 grade = 'D';
         }
         else {
@@ -30,7 +30,7 @@ public class ControlFlow {
         LOGGER.info("Student grade: " + grade); // + grade
     }
     public void switchStatement(){
-        String day = "Unknown";
+        String day = "SUNDAY";
         switch(day){
             case "MONDAY":
                 LOGGER.info("Monday working day");
@@ -56,7 +56,7 @@ public class ControlFlow {
 
         }
 
-        
+
     }
     public static void main(String[] args) {
         ControlFlow app = new ControlFlow();

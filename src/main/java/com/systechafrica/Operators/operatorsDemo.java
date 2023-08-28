@@ -73,11 +73,11 @@ public class operatorsDemo {
         boolean isStudentOneAgeGreaterThanStudentTwoAge = studentOneAge > studentTwoAge;
         LOGGER.info("isStudentOneAgeGreaterThanStudentTwoAge: " + isStudentOneAgeGreaterThanStudentTwoAge);
 
-        // TODO: Do one for less than or equal to operator
+        //! DONE: Do one for less than or equal to operator
         boolean isStudentOneAgeLessThanOrEqualToStudentTwoAge = studentOneAge <= studentTwoAge;
         LOGGER.info("IsStudentOneAgeLessThanOrEqualToStudentTwoAge: " + isStudentOneAgeLessThanOrEqualToStudentTwoAge);
 
-        // TODO: Do one for greater than or equal to operator
+        //! DONE: Do one for greater than or equal to operator
         boolean isStudentOneAgeGreaterThanOrEqualToStudentTwoAge = studentOneAge >= studentTwoAge;
         LOGGER.info("IsStudentOneAgeGreaterThanOrEqualToStudentTwoAge: " + isStudentOneAgeGreaterThanOrEqualToStudentTwoAge);
     }
