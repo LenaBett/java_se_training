@@ -16,6 +16,9 @@ public class LoopingStatements {
         for (int counter = 0; counter <= 10; counter++) {
             LOGGER.info("Count = " + counter);
         }
+        // for (int counter = 10; counter <= 0; counter--){
+           //  LOGGER.info("Count = " + counter);
+         // }
     }
 
     public void whileLoop() {
@@ -29,8 +32,8 @@ public class LoopingStatements {
 
     public static void main(String[] args) {
         LoopingStatements app = new LoopingStatements();
-        // app.forLoop();
-        app.whileLoop();
+        app.forLoop();
+        // app.whileLoop();
 
     }
 }
