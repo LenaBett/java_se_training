@@ -23,17 +23,80 @@ public class LoopingStatements {
 
     public void whileLoop() {
         int studentCount = 0;
+        int counter = 0;
         while (studentCount < 10) {
             LOGGER.info("Student Count = " + studentCount);
             studentCount++; // studentCount = studentCount + 1
         }
+        LOGGER.info("Counter = " + counter);
+    }
+
+    public void doWhileLoop() {
+
+        int myNumber = 0;
+        int counter = 0;
+        do {
+            LOGGER.info("My number is: " + myNumber);
+            myNumber++; // myNumber = myNumber + 1
+            counter++;
+        } while (myNumber < 10);
+        LOGGER.info("Counter = " + counter);
+
+    }
+
+    public void breakJumpStatements() {
+        LOGGER.info("Before my loop ");
+        for (int index = 0; index < 10; index++) {
+            if (index == 5) {
+                break;
+            }
+            LOGGER.info("My index is: " + index);
+        }
+        LOGGER.info("After my loop ");
+    }
+
+    public void continueJumpStatements() {
+        LOGGER.info("Before my loop ");
+        for (int index = 0; index < 10; index++) {
+            if (index == 5) {
+                continue;
+            }
+            LOGGER.info("My index is: " + index);
+        }
+        LOGGER.info("After my loop ");
+
+    }
+
+    public int search(int numberToSearch){
+        for (int index = 1; index <= 50; index++) {
+            if(index == numberToSearch){
+                return index;
+            }
+        }
+        return 0;
+    }
+
+    public void returnJumpStatements() {
+        LOGGER.info("Before my loop ");
+        for (int index = 0; index < 10; index++) {
+            if (index == 4) {
+                return;
+            }
+            LOGGER.info("My index is: " + index);
+        }
+        LOGGER.info("After my loop ");
 
     }
 
     public static void main(String[] args) {
         LoopingStatements app = new LoopingStatements();
         app.forLoop();
-        // app.whileLoop();
+        app.whileLoop();
+        app.doWhileLoop();
+        app.breakJumpStatements();
+        app.continueJumpStatements();
+        app.returnJumpStatements();
+       
 
     }
 }
