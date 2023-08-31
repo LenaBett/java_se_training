@@ -6,23 +6,27 @@ import java.util.Scanner;
 
 public class App {
     private static final Logger LOGGER = Logger.getLogger(App.class.getName());
-    private static final Scanner scanner = new Scanner(System.in);
+    private final Scanner scanner;
 
-    public static void main( String[] args )
-    {
-        userLogin();
+    public App(Scanner scanner) {
+        this.scanner = scanner;
     }
 
-    public int addNumbers(int a, int b){
+    public static void main(String[] args) {
+        App appOne = new App(new Scanner(System.in));
+        appOne.userLogin();
+    }
+
+    public int addNumbers(int a, int b) {
         return a + b;
 
     }
 
-    public int multiplyNumbers(int a, int b){
+    public int multiplyNumbers(int a, int b) {
         return a * b;
     }
 
-    public static String userLogin(){
+    public void userLogin() {
         // Set the expected password
         String expectedPwd = "Admin123";
 
@@ -42,8 +46,11 @@ public class App {
 
         }
         if (ispasswordsMatch) {
-            LOGGER.info("Accepted");
+            homeScreen();
         }
-        return expectedPwd;
+
+    }
+
+    public void homeScreen() {
     }
 }
