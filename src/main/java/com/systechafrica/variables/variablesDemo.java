@@ -60,14 +60,6 @@ public class variablesDemo {
     LOGGER.info("Float value is " + floatRate);
     LOGGER.info("Float value is " + doubleRate2);
 
-    // float
-    float price = 0.2365F;
-    Float priceFloat = 0.2365F;
-   
-    //double
-    double prtPrice = 0.2365;
-    Double priceDouble = 0.2365;
-
     }
 
     private void characterTypes(){
@@ -127,6 +119,19 @@ public class variablesDemo {
         char studentGrade = 'D';
         Character aStudentGrade = 'D';
         aStudentGrade.equals(studentGrade);
+
+        // float wrapper class
+        float price = 0.2365F;
+        Float priceFloat = 0.2365F;
+
+        //double wrapper class
+        double prtPrice = 0.2365;
+        Double priceDouble = 0.2365;
+    }
+
+    private void typeCasting(){
+
+
     }
 
     public static void main(String[] args) {
