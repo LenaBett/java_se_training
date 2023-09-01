@@ -130,13 +130,22 @@ public class variablesDemo {
     }
 
     private void typeCasting(){
+         //process of converting one data type to another
+        // implicit casting (widening conversion) - smaller data type to a larger data type - no loss of precision
+        int number = 10;
+        long bigNum = number;
 
+
+        // Explicit casting (Narrowing conversion) - larger data type to a smaller data type - loss of precision
+        long a = 2147483648L;
+        int b = (int) a; // the data type must be explicitly
+        LOGGER.info("int value value is:" + b);
 
     }
 
     public static void main(String[] args) {
         variablesDemo demo = new variablesDemo();
-    
+
         demo.variableDeclaration();
         demo.constantVariables();
         demo.integerTypes();
@@ -144,11 +153,8 @@ public class variablesDemo {
         demo.characterTypes();
         demo.booleanTypes();
         demo.wrapperClass();
+        demo.typeCasting();
 
-        long a = 2147483648L;
-        
-        int b = (int) a;
-        LOGGER.info("int value value is:" + b);
     
     }      
 }
