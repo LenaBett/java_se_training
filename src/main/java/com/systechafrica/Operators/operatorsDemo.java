@@ -86,7 +86,7 @@ public class operatorsDemo {
         LOGGER.info("IsStudentOneAgeGreaterThanOrEqualToStudentTwoAge: " + isStudentOneAgeGreaterThanOrEqualToStudentTwoAge);
     }
 
-    public void andLogicalOperator() {
+    public void andLogicalOperator() { // the statement is true only if both statements are true
         int studentOneAge = 17;
         int studentTwoAge = 25;
 
@@ -95,14 +95,14 @@ public class operatorsDemo {
 
         // AND operator
         if (isStudentOneAllowed && isStudentTwoAllowed) {
-            LOGGER.info("Students allowed for ID registration");
+            LOGGER.info("Student allowed for ID registration");
         } else {
             LOGGER.info("Not allowed for registration");
         }
 
     }
 
-    public void orLogicalOperator() {
+    public void orLogicalOperator() { // if one statement is true, the entire expression is true
         int studentOneAge = 17;
         int studentTwoAge = 25;
 
@@ -110,22 +110,21 @@ public class operatorsDemo {
         boolean isStudentTwoAllowed = studentTwoAge >= 18;
         // or operator
         if (isStudentOneAllowed || isStudentTwoAllowed) {
-            LOGGER.info("Students allowed  for ID registration");
+            LOGGER.info("Student allowed  for ID registration");
         } else {
             LOGGER.info("Not allowed  for ID registration");
         }
     }
 
-    public void notLogicalOperator() {
+    public void notLogicalOperator() { //negates a statement
         int studentOneAge = 17;
         boolean isStudentOneAllowed = studentOneAge >= 18;
-        // and operator
+        // not operator
         if (!isStudentOneAllowed) {
-            LOGGER.info("Students allowed  for ID registration");
+            LOGGER.info("Student allowed  for ID registration");
         } else {
             LOGGER.info("Not allowed  for ID registration");
         }
-
     }
 
     public static void main(String[] args) {
