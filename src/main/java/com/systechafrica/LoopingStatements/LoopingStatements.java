@@ -70,15 +70,6 @@ public class LoopingStatements {
 
     }
 
-    public int search(int numberToSearch) {
-        for (int index = 1; index <= 50; index++) {
-            if (index == numberToSearch) {
-                return index;
-            }
-        }
-        return 0;
-    }
-
     public void returnJumpStatement() {
         // terminates the execution of a method and returns a value
         LOGGER.info("Before my loop ");
@@ -90,6 +81,16 @@ public class LoopingStatements {
         }
         LOGGER.info("After my loop ");
 
+    }
+
+    // Loop test example. Check LoopingStatemetsTest file
+    public int search(int numberToSearch) {
+        for (int index = 1; index <= 50; index++) {
+            if (index == numberToSearch) {
+                return index;
+            }
+        }
+        return 0;
     }
 
     public static void main(String[] args) {
