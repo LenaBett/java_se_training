@@ -3,13 +3,15 @@ package com.systechafrica.Arrays;
 import java.util.logging.Logger;
 
 public class WorkingWithArrays {
+    // Arrays are data structures that store collections of elements of the same type
 
     private static final Logger LOGGER = Logger.getLogger(WorkingWithArrays.class.getName());
+
     public void singleDimensionalArray() {
-        int[] numbers = { 45, 10, 26, 35, 40, 59 }; // int numbers[]
+        int[] numbers = { 45, 10, 26, 35, 40, 59 }; // an array of integer elements
         int ages[] = { 45, 10, 26, 35, 40, 59 }; // c/c++ array is also valid in java not commonly used
         String[] nickNames = { "mhusika", "Ntate", "Yokana" };
-        for (int i = 0; i < numbers.length; i++) {
+        for (int i = 0; i < numbers.length; i++) { // make sure you
             LOGGER.info("" + numbers[i]);
         }
         LOGGER.info(nickNames[0]);
@@ -59,7 +61,7 @@ public class WorkingWithArrays {
     }
     public static void main(String[] args) {
         WorkingWithArrays app = new WorkingWithArrays();
-        // app.singleDimensionalArray();
+        app.singleDimensionalArray();
         app.multiDimensionalArray();
     }
 }
