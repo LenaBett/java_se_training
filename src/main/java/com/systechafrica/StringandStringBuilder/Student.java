@@ -8,18 +8,19 @@ public class Student {
     private String address;
     private String nickname;
 
-    public String getFullDetails(){
-        StringBuilder sb =  new StringBuilder();
+    public String getStudentDetails() {
+        StringBuilder sb = new StringBuilder();
         sb.append(firstName)
-        .append("")
-        .append(lastName)
-        .append("")
-        .append(email)
-        .append("");
+                .append("")
+                .append(lastName)
+                .append("")
+                .append(email)
+                .append("");
         return sb.toString();
     }
-    public String getFullDetails2(){
-        return   firstName +" "+lastName+" "+email; 
+
+    public String getStudentDetails2() {
+        return firstName + " " + lastName + " " + email;
     }
 
 }

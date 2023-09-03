@@ -12,7 +12,7 @@ public class StringBuilderClassDemo {
         String str = " ";
 
         boolean equals = str.equals(sb.toString()); // str == sb.toString(); comparing addresses -> false
-        LOGGER.info(""+equals);
+        LOGGER.info("" + equals);
 
 
     }

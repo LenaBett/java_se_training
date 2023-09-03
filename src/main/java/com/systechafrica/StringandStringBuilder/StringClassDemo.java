@@ -9,23 +9,22 @@ public class StringClassDemo {
 
         //? strings are immutable that is once created then can't be modified 
         //? unless they are reassigned again
-
-
         //! Any operations on a string variable results in creation of a new string => immutability
+
         String message = "Hello";
         //no effect
-        message.concat(" world!"); 
+        message.concat(" world!");
         // has effect by reassigning
-        message =  message.concat(" Programmer!"); 
+        message = message.concat(" Programmer!");
         LOGGER.info(message);
-        
+
         String sb = new String("Hello, world");
         String sa = "Hello, world";
-        boolean equals = sa.equals(sb);
+        boolean equals = sa.equals(sb); // the equals function compares the content and not the storage location
         boolean equals2 = sa == sb;
 
-        LOGGER.info(""+equals);
-        LOGGER.info(""+equals2);
+        LOGGER.info("" + equals);
+        LOGGER.info("" + equals2);
     }
 
 }
