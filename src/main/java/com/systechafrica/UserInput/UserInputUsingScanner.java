@@ -7,7 +7,7 @@ public class UserInputUsingScanner {
     private static final Logger LOGGER = Logger.getLogger(UserInputUsingScanner.class.getName());
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in); //The Scanner class uses the System.in parameter
         final String EXP_USERNAME = "Lena";
         final String EXP_PASSWORD = "Admin123";
 
