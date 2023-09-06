@@ -12,7 +12,7 @@ public class WorkingWithArrays {
 
         String[] nickNames = {"Buddy", "Bud", "Lenz"};
         for (int i = 0; i < numbers.length; i++) { // loop to list the elements in the array
-            LOGGER.info("" + numbers[i]);
+            LOGGER.info("" + numbers[i]); // Accessing elements in one dimensional arrays
         }
         LOGGER.info(nickNames[0]);
         LOGGER.info(nickNames[1]);
@@ -39,15 +39,17 @@ public class WorkingWithArrays {
         // for the length of multidimensional array we count the number of elements in the parent array
         int length = matrix.length;
         LOGGER.info("The Length of the array is: " + length);
-        LOGGER.info("Number 8 => : " + matrix[2][2]);
+        LOGGER.info("Number 8 => : " + matrix[2][2]); // Accessing array elements
 
         String[][] matrix3 = new String[3][3];
-        // ? indicates a multi dimension array with length of 3 and individual arrays with length of 3
 
         int[][] matrix4;
+
+        // ? indicates a multi dimension array with length of 5 and individual arrays with unspecified length
         matrix4 = new int[5][];
+
         // Adding values to the array
-        int[][] matrix2 = new int[3][3]; // ? indicates a multi dimension array with length of 3
+        int[][] matrix2 = new int[3][3]; // ? indicates a multi dimension array with length of 3 that accepts elements of the int type
         //row 1
         matrix2[0][0] = 10;
         matrix2[0][1] = 15;
