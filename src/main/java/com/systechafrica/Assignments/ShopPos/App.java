@@ -9,7 +9,6 @@ public class App {
     public static void main(String[] args) {
         App app = new App(); // instance of the App class
 
-        // calling the methods
         if (!app.loginAttempt()) {
             return;
         }

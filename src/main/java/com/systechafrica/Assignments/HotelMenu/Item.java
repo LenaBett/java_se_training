@@ -1,10 +1,10 @@
 package com.systechafrica.Assignments.HotelMenu;
 
-public class OrderItem {
+public class Item {
     private String name;
     private double price;
 
-    public OrderItem(String name, double price) {
+    public Item(String name, double price) {
         this.name = name;
         this.price = price;
     }
@@ -16,4 +16,9 @@ public class OrderItem {
     public double getPrice() {
         return price;
     }
+
+
+
+
+
 }
