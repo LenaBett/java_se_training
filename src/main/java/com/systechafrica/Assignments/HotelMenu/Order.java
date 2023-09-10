@@ -10,13 +10,13 @@ public class Order {
 
     private double balance = 0;
     Scanner scanner;
-    private double userPayment;
+    private double customerPayment;
 
-    public void addItem(Item item){
+    public void addItem(Item item) {
         items.add(item);
     }
 
-    public double calculateTotal(){
+    public double calculateTotal() {
         double totalAmount = 0;
         for (var item : items) {
             totalAmount += item.getPrice();
@@ -24,20 +24,32 @@ public class Order {
         return totalAmount;
     }
 
-    public void displayOrder(){
+    public void displayOrder() {
+        System.out.println("Pay now for ");
 
-
+        for (var item : items) {
+            System.out.println(item.getName() + "............." + item.getPrice());
+        }
+        System.out.println("**************************************");
+        System.out.println("");
+        System.out.println("Total " + calculateTotal());
+        System.out.println("");
+        System.out.println("**************************************");
+        System.out.println("");
+        System.out.println("Balance is: " + (customerPayment - calculateTotal()));
+        System.out.println("***************************************");
     }
+
 
     public void payNow() {
         scanner = new Scanner(System.in);
         System.out.println("Please enter valid payment: ");
         double payment = scanner.nextDouble();
-        if (payment < calculateTotal()){
+        if (payment < calculateTotal()) {
             System.out.println("Amount less than total billed.");
             payNow();
-        }else{
-            userPayment = payment;
+        } else {
+            customerPayment = payment;
         }
     }
 }

@@ -24,7 +24,7 @@ public class HotelApp {
             Item item = hotel.getItem(itemId);
             order.addItem(item);
 
-            System.out.println("Do you want to add another drink meal/drink option?");
+            System.out.println("Do you want to add another meal/drink option?");
             System.out.println("Y. Yes ");
             System.out.println("N. No");
             String option = scanner.nextLine();
@@ -34,9 +34,13 @@ public class HotelApp {
             }
         } while (loop);
 
-        order.payNow();
-        order.displayOrder();
-
+        System.out.println("Proceed to payment? ");
+        if ("Y".equals(scanner.nextLine())){
+            order.payNow();
+            order.displayOrder();
+        }else{
+            return;
+        }
     }
 
 
