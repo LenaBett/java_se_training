@@ -19,13 +19,5 @@ public class Reciept {
         items.add(recieptItem);
     }
 
-    private void printReciept(){
-        for (var item: items) {
-
-        }
-        System.out.println(items.);
-    }
-
-
 
 }
