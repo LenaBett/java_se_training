@@ -10,7 +10,12 @@ public class Shop {
 
     public Shop() {
         List<Item> items = new ArrayList<>();
-        items.add(new Item("code-1", "Chips", 1000));
+        items.add(new Item("a-1", "Apple", 25));
+        items.add(new Item("a-2", "Avocado", 30));
+        items.add(new Item("a-3", "Apricot", 12.5));
+        items.add(new Item("b-1", "Banana", 3.33));
+        items.add(new Item("b-2", "Basket", 40.5));
+        items.add(new Item("b-3", "Bacon", 400));
 
         inventory = items;
     }
