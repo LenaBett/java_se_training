@@ -18,7 +18,6 @@ public class App {
         mainMenu.displayMenu();
 
     }
-
     public boolean loginAttempt() {
         Login login = new Login();
         return login.login();

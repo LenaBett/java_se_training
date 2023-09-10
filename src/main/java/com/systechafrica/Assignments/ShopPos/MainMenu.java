@@ -3,7 +3,7 @@ package com.systechafrica.Assignments.ShopPos;
 import java.util.Scanner;
 
 public class MainMenu {
-    private final Scanner scanner;
+    private Scanner scanner;
 
     private final Shop shop;
 
@@ -15,6 +15,7 @@ public class MainMenu {
     }
 
     public void displayMenu() {
+        scanner = new Scanner(System.in);
         System.out.println("-----------------------");
         System.out.println("");
         System.out.println(" SYSTECH POS SYSTEM");
@@ -42,7 +43,6 @@ public class MainMenu {
         }
 
         displayMenu();
-
     }
 
     private void addReceiptItem() {
@@ -65,8 +65,6 @@ public class MainMenu {
         if ("Y".equals(addAnotherItem)) {
             addReceiptItem();
         }
-
-
     }
 
     private void makePayment() {

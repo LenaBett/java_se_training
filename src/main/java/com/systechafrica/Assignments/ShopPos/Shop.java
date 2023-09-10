@@ -20,10 +20,6 @@ public class Shop {
         inventory = items;
     }
 
-    public List<Item> getInventory() {
-        return inventory;
-    }
-
     public Item getItem(String code) {
         return inventory.stream().
                 filter(item -> item.getCode().equals(code))
