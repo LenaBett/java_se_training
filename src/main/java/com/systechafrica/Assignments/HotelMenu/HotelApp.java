@@ -29,7 +29,7 @@ public class HotelApp {
             System.out.println("N. No");
             String option = scanner.nextLine();
 
-            if (!"Y".equals(option)) {
+            if (!"y".toLowerCase().equals(option)) {
                 loop = false;
             }
         } while (loop);

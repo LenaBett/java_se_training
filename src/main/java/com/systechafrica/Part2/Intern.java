@@ -11,6 +11,14 @@ public class Intern {
     String phoneNumber;
     String email;
 
+    public Intern (String name, String phoneNumber, String email){
+        this.name = name;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
+    }
+
+    public Intern(){}
+
     public void attendClass(){
         LOGGER.info("Attended Class");
     }

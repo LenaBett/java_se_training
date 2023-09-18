@@ -42,7 +42,9 @@ public class ClassesDemo {
         jude.attendClass();
         jude.doAssignment();
 
-
+        Intern bob = new Intern("Bob", "555-tom-98", "tommy@gnail.com" );
+        bob.doAssignment();
+        bob.attendClass();
     }
 
     public void calculator(){

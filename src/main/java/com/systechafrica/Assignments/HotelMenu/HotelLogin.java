@@ -25,7 +25,7 @@ public class HotelLogin {
 
         }
 
-        // When correct password is provided, the POS menu is displayed
+        // When correct password is provided, the Hotel menu is displayed
         if (isPasswordMatch) {
             System.out.println("Login Successful");
 
