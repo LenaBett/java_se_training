@@ -1,6 +1,4 @@
-package com.systechafrica.Part2;
-
-import com.systechafrica.Part2.Calculator;
+package com.systechafrica.Part2.Classes;
 
 public class ClassesDemo {
     public static void main(String[] args) {

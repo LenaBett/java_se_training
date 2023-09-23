@@ -1,4 +1,4 @@
-package com.systechafrica.Part2;
+package com.systechafrica.Part2.Classes;
 
 public class Car {
     // Class variables(attributes)

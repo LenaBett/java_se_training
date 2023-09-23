@@ -1,6 +1,4 @@
-package com.systechafrica.Part2;
-
-import com.systechafrica.LoopingStatements.LoopingStatements;
+package com.systechafrica.Part2.Classes;
 
 import java.util.logging.Logger;
 
