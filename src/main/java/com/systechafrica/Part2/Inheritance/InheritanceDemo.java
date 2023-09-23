@@ -1,5 +1,6 @@
 package com.systechafrica.Part2.Inheritance;
 
+import com.systechafrica.Part2.Inheritance.CompanySetup.DatabaseEngineer;
 import com.systechafrica.Part2.Inheritance.CompanySetup.QualityAssurance;
 import com.systechafrica.Part2.Inheritance.CompanySetup.SoftwareEngineer;
 
@@ -19,20 +20,25 @@ public class InheritanceDemo {
     }
 
     public void companySetup() {
-        SoftwareEngineer e1 = new SoftwareEngineer();
-        e1.setEmployeeName("Emily");
-        e1.setEmployeeNo("324");
-        e1.setEmployeeAddress("Nairobi");
-        e1.setTitle("Software Engineer");
+        SoftwareEngineer e1 = new SoftwareEngineer("Emily","324", "Nairobi", "Software Engineer");
+//        e1.setEmployeeName("Emily");
+//        e1.setEmployeeNo("324");
+//        e1.setEmployeeAddress("Nairobi");
+//        e1.setTitle("Software Engineer");
         LOGGER.info("SoftwareEngineer => " + e1.toString());
 
-        QualityAssurance qa = new QualityAssurance();
-        qa.setEmployeeName("John");
-        qa.setEmployeeNo("352");
-        qa.setEmployeeAddress("Nairobi");
-        qa.setTitle("SDET");
-        LOGGER.info("Quality Assurance => " + qa.toString());
+//        QualityAssurance qa = new QualityAssurance();
+//        qa.setEmployeeName("John");
+//        qa.setEmployeeNo("352");
+//        qa.setEmployeeAddress("Nairobi");
+//        qa.setTitle("SDET");
+//        LOGGER.info("Quality Assurance => " + qa.toString());
 
+//        DatabaseEngineer de = new DatabaseEngineer();
+//        de.setEmployeeName("Joe");
+//        de.setEmployeeNo("009");
+//        de.setTitle("Database engineer");
+//        LOGGER.info("Database => " + de.toString());
 
     }
 

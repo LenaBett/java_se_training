@@ -5,6 +5,13 @@ public class Employee {
     private String employeeName;
     private String employeeAddress;
 
+
+    public Employee(String employeeNo, String employeeName, String employeeAddress) {
+        this.employeeNo = employeeNo;
+        this.employeeName = employeeName;
+        this.employeeAddress = employeeAddress;
+    }
+
     public String getEmployeeNo() {
         return employeeNo;
     }
