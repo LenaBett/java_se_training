@@ -22,7 +22,7 @@ public class InstanceVsClassVariables {
         System.out.println(message);
         // System.out.println(message2); //! cannot compile because the static method cannot access variables which are not static
     }
-    //?  An instance variable declared within the class can only be accessed inside NON STATIC methods of the class  and
+    //?  An instance variable declared within the class can only be accessed inside NON-STATIC methods of the class  and
     //?  if you have to access them then you need to create an instance of the class
 
 }
