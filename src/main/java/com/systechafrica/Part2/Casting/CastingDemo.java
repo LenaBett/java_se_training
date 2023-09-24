@@ -18,9 +18,14 @@ public class CastingDemo {
 //    Dog dog = new  Animal(); // cannot compile because dog is not the super class for the Animal class
 
     public void printInfo(Animal animal) {
-        Dog dog = (Dog) animal;  //Converting the object 'animal' to be an object of the Dog class
-                                // Downcasting(Explicit casting)
-        dog.makeSound();
+        if(animal instanceof Dog){
+            Dog dog = (Dog) animal;  //Converting the object 'animal' to be an object of the Dog class
+            // Downcasting(Explicit casting)
+            dog.makeSound();
+        }else if (animal instanceof Cat){
+            Cat cat = (Cat) animal;
+            System.out.println(cat.printName());
+        }
     }
 
 }
