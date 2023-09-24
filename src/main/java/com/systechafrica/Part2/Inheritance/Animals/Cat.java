@@ -8,5 +8,4 @@ public class Cat extends Animal {
     public String printName(){
         return "Cat";
     }
-
 }
