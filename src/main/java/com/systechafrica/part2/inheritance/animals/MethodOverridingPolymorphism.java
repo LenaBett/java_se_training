@@ -1,4 +1,4 @@
-package com.systechafrica.part2.inheritance.Animals;
+package com.systechafrica.part2.inheritance.animals;
 
 public class MethodOverridingPolymorphism {
     public static void main(String[] args) {

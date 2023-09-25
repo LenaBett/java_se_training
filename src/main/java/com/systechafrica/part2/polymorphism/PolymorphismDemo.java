@@ -5,9 +5,9 @@ import com.systechafrica.part2.inheritance.CompanySetup.DatabaseEngineer;
 import com.systechafrica.part2.inheritance.CompanySetup.Employee;
 import com.systechafrica.part2.inheritance.CompanySetup.QualityAssurance;
 import com.systechafrica.part2.inheritance.CompanySetup.SoftwareEngineer;
-import com.systechafrica.part2.inheritance.ProtectedAccessModifier.Nomencleture.Genus.Genus;
-import com.systechafrica.part2.inheritance.ProtectedAccessModifier.Nomencleture.Kingdom.Kingdom;
-import com.systechafrica.part2.inheritance.ProtectedAccessModifier.Nomencleture.Species.Species;
+import com.systechafrica.part2.inheritance.ProtectedAccessModifier.nomencleture.Genus.Genus;
+import com.systechafrica.part2.inheritance.ProtectedAccessModifier.nomencleture.Kingdom.Kingdom;
+import com.systechafrica.part2.inheritance.ProtectedAccessModifier.nomencleture.Species.Species;
 
 public class PolymorphismDemo {
     public static void main(String[] args) {

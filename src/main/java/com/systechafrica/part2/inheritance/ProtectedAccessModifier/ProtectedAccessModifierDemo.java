@@ -1,6 +1,6 @@
 package com.systechafrica.part2.inheritance.ProtectedAccessModifier;
 
-import com.systechafrica.part2.inheritance.ProtectedAccessModifier.Nomencleture.Kingdom.Kingdom;
+import com.systechafrica.part2.inheritance.ProtectedAccessModifier.nomencleture.Kingdom.Kingdom;
 
 public class ProtectedAccessModifierDemo {
 

@@ -1,8 +1,8 @@
 package com.systechafrica.part2.casting;
 
-import com.systechafrica.part2.inheritance.Animals.Animal;
-import com.systechafrica.part2.inheritance.Animals.Cat;
-import com.systechafrica.part2.inheritance.Animals.Dog;
+import com.systechafrica.part2.inheritance.animals.Animal;
+import com.systechafrica.part2.inheritance.animals.Cat;
+import com.systechafrica.part2.inheritance.animals.Dog;
 
 public class CastingDemo {
     public static void main(String[] args) {
