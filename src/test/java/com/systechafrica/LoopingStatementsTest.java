@@ -2,13 +2,10 @@ package com.systechafrica;
 
 import java.util.logging.Logger;
 
-import com.systechafrica.LoopingStatements.LoopingStatements;
+import com.systechafrica.part1.loopingstatements.LoopingStatements;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
-
-import java.util.Enumeration;
-import java.util.logging.Logger;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 
