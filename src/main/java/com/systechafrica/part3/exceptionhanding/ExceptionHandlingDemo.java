@@ -34,6 +34,12 @@ public class ExceptionHandlingDemo {
         return student;
     }
 
+    //non checked exception - all mon checked exceptions extend from RuntimeException
+    //no alarm raised when compiling
+//    private void printInfo(){
+//        throw new RandomRuntimeException("Random function");
+//    }
+
     private void workingWithException() {
         StudentController studentController = new StudentController();
         try {

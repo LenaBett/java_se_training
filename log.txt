@@ -1,0 +1,6 @@
+main | INFO | Info log
+main | WARNING | Warning log
+main | SEVERE | Error log
+test | INFO | Info log in test
+test | WARNING | Warning log in test
+test | SEVERE | Error log in test
