@@ -68,13 +68,20 @@ public class MainMenu {
     }
 
     private void makePayment() {
-        System.out.println("Please Enter Valid Payment Amount: ");
-        double payment = scanner.nextDouble();
-        if (receipt.makePayment(payment)) {
-            receipt.makePayment(payment);
-        } else {
-            System.out.println("Please enter a greater payment amount than the total bill.");
-            makePayment();
+        if(receipt.receiptIsEmpty()){
+            System.out.println("No items added. Please add items.");
+
+        }else {
+            System.out.println("Please Enter Valid Payment Amount: ");
+            double payment = scanner.nextDouble();
+            if (receipt.makePayment(payment)) {
+                receipt.makePayment(payment);
+            } else {
+                System.out.println("Please enter a greater payment amount than the total bill.");
+                makePayment();
+            }
+
         }
+
     }
 }

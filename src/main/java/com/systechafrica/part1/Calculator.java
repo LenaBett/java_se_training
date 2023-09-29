@@ -1,4 +1,4 @@
-package com.systechafrica.assignments;
+package com.systechafrica.part1;
 
 import com.systechafrica.part1.arrays.WorkingWithArrays;
 

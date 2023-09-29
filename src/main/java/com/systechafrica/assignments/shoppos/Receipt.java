@@ -31,6 +31,10 @@ public class Receipt {
         }
     }
 
+    public boolean receiptIsEmpty(){
+        return items.isEmpty();
+    }
+
     public void printReceipt() {
         System.out.println("Item Code    Quantity    Unit Price  Total Value");
 
