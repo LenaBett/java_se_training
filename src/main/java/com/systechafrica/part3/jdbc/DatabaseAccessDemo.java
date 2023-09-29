@@ -19,7 +19,7 @@ public class DatabaseAccessDemo {
         FileHandler fileHandler;
 
         try {
-            fileHandler = new FileHandler("working-with-database.txt");
+            fileHandler = new FileHandler("working-with-database.txt", true);
             CustomFormatter formatter = new CustomFormatter();
             LOGGER.addHandler(fileHandler);
             fileHandler.setFormatter(formatter);
@@ -28,7 +28,7 @@ public class DatabaseAccessDemo {
             //2. Load the database driver
             Class.forName("com.mysql.cj.jdbc.Driver");
             //3. Create a connection
-            String connectionUrl = "jdbc:mysql://localhost:3306/myshop";
+            String connectionUrl = "jdbc:mysql://localhost:3306/javase";
             String user = "root";
             String password = "Lena2540";
             Connection connection = DriverManager.getConnection(connectionUrl, user, password);

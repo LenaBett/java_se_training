@@ -8,7 +8,8 @@ public class Login {
 
     public boolean login() {
         // Set the expected password
-        String expectedPwd = "Admin123";
+        final String PWD_EXPECTED;
+        PWD_EXPECTED = "Admin123";
 
         // initialize a boolean variable to compare the expected password to the password provided by the user
         boolean isPasswordMatch = false;
@@ -19,7 +20,7 @@ public class Login {
             System.out.println("Enter your password");
             String userInput = scanner.nextLine();
 
-            if (expectedPwd.equals(userInput)) {
+            if (PWD_EXPECTED.equals(userInput)) {
                 isPasswordMatch = true;
                 break;
             }

@@ -4,3 +4,27 @@
 2023-09-25  22:37:12 | test | INFO | Info log in test
 2023-09-25  22:37:12 | test | WARNING | Warning log in test
 2023-09-25  22:37:12 | test | SEVERE | Error log in test
+data2023-09-29  16:27:45 | main | INFO | Info log
+
+2023-09-29  16:27:45 | main | WARNING | Warning log
+
+2023-09-29  16:27:45 | main | SEVERE | Error log
+
+2023-09-29  16:27:45 | test | INFO | Info log in test
+
+2023-09-29  16:27:45 | test | WARNING | Warning log in test
+
+2023-09-29  16:27:45 | test | SEVERE | Error log in test
+
+data2023-09-29  16:28:04 | main | INFO | Info log
+
+2023-09-29  16:28:05 | main | WARNING | Warning log
+
+2023-09-29  16:28:05 | main | SEVERE | Error log
+
+2023-09-29  16:28:05 | test | INFO | Info log in test
+
+2023-09-29  16:28:05 | test | WARNING | Warning log in test
+
+2023-09-29  16:28:05 | test | SEVERE | Error log in test
+
