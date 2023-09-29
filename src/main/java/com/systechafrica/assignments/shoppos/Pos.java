@@ -2,14 +2,14 @@ package com.systechafrica.assignments.shoppos;
 
 import java.util.Scanner;
 
-public class App {
+public class Pos {
     private static final Scanner scanner = new Scanner(System.in);
 
 
     public static void main(String[] args) {
-        App app = new App(); // instance of the App class
+        Pos pos = new Pos(); // instance of the App class
 
-        if (!app.loginAttempt()) {
+        if (!pos.loginAttempt()) {
             return;
         }
 

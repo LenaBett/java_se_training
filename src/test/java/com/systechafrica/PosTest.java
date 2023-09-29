@@ -11,7 +11,7 @@ import static org.mockito.Mockito.*;
 
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS) //? This is the default instance
-public class AppTest {
+public class PosTest {
 
     Scanner scanner = Mockito.mock(Scanner.class);
 

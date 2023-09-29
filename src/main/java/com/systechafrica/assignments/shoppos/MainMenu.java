@@ -24,7 +24,7 @@ public class MainMenu {
         System.out.println("");
         System.out.println("1. Add Item");
         System.out.println("2. Make Payment");
-        System.out.println("3. Display Reciept");
+        System.out.println("3. Display Receipt");
         System.out.println("");
         System.out.println("Choose an Option");
 

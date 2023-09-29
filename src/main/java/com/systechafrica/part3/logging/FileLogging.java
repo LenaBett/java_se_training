@@ -1,5 +1,7 @@
 package com.systechafrica.part3.logging;
 
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.time.Instant;
 import java.time.LocalDateTime;
@@ -16,6 +18,11 @@ public class FileLogging {
     public static void main(String[] args) throws IOException {
         FileHandler fileHandler = new FileHandler("log.txt");
         CustomFormatter formatter = new CustomFormatter();
+
+        File file = new File("log.txt");
+        FileWriter fr = new FileWriter(file, true);
+        fr.write("data");
+        fr.close();
 
         LOGGER.addHandler(fileHandler);
         fileHandler.setFormatter(formatter);
