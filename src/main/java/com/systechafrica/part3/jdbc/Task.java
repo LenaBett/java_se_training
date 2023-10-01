@@ -24,7 +24,13 @@ public class Task {
     public Task() {
     }
 
-    public Task(String title, LocalDate startDate, LocalDate dueDate, int taskStatus, int taskPriority, String taskDescription) {
+    public Task(String title, LocalDate startDate, LocalDate dueDate, int status, int priority, String description) {
+        this.title = title;
+        this.startDate = startDate;
+        this.dueDate = dueDate;
+        this.status = status;
+        this.priority = priority;
+        this.description = description;
     }
 
     public int getId() {
@@ -48,7 +54,6 @@ public class Task {
     }
 
     public void setStartDate(LocalDate start_date) {
-        this.startDate = startDate;
     }
 
     public LocalDate getDueDate() {
@@ -56,7 +61,6 @@ public class Task {
     }
 
     public void setDue_date(LocalDate due_date) {
-        this.dueDate = dueDate;
     }
 
     public int getStatus() {

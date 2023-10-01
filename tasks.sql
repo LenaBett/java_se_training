@@ -8,3 +8,6 @@ insert into tasks (title,start_date,due_date,status,priority,description)values(
 
 
 insert into tasks (title,start_date,due_date,status,priority,description)values(?,?,?,?,?,?);
+
+
+CREATE TABLE IF NOT EXISTS book (bookId INT AUTO_INCREMENT PRIMARY KEY, isbn VARCHAR(10), title VARCHAR(255), status VARCHAR(20);

@@ -36,7 +36,7 @@ public class DatabaseAccessDemo {
             //4. Create Statement from yhe connection
             Statement statement = connection.createStatement();
 
-            String createTasksTable = "CREATE TABLE IF NOT EXISTS tasks (task_id INT AUTO_INCREMENT PRIMARY KEY,title VARCHAR(255) NOT NULL,start_date DATE,due_date DATE,status TINYINT NOT NULL,priority TINYINT NOT NULL,description TEXT,created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP)  ENGINE=INNODB;";
+            String createTasksTable = "CREATE TABLE IF NOT EXISTS tasks (task_id INT AUTO_INCREMENT PRIMARY KEY,title VARCHAR(255) NOT NULL,start_date DATE,due_date DATE,status TINYINT NOT NULL,priority TINYINT NOT NULL,description TEXT);";
             // Execute queries
             int updateStatus = statement.executeUpdate(createTasksTable);
             LOGGER.info("Update status: " + updateStatus);
@@ -98,7 +98,7 @@ public class DatabaseAccessDemo {
         } catch (SQLException e) {
             LOGGER.severe("Database operation failure " + e.getMessage());
         } catch (Exception e) {
-            LOGGER.severe("Oops! An error occurred " + e.getMessage());
+        e.printStackTrace();
         }
 
     }
@@ -114,19 +114,17 @@ public class DatabaseAccessDemo {
         LocalDate dueDate = LocalDate.parse(scanner.nextLine());
 
         System.out.println("Enter task Status");
-        int taskStatus = scanner.nextInt();
+        int status = scanner.nextInt();
 
         System.out.println("Enter task Priority");
         scanner.nextLine();
-        int taskPriority = scanner.nextInt();
+        int priority = scanner.nextInt();
 
         System.out.println("Enter task description");
         scanner.nextLine();
-        String taskDescription = scanner.nextLine();
+        String description = scanner.nextLine();
 
-        Task task = new Task(title, startDate, dueDate, taskStatus, taskPriority, taskDescription);
-
-        return task;
+        return new Task(title, startDate, dueDate, status, priority, description);
 
     }
 }

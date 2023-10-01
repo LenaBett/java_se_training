@@ -1,1 +1,31 @@
-2023-09-29  16:16:07 | main | INFO | Update status: 02023-09-29  16:16:39 | main | SEVERE | Oops! An error occurred null
+2023-09-29  16:16:07 | main | INFO | Update status: 02023-09-29  16:16:39 | main | SEVERE | Oops! An error occurred null2023-09-29  16:32:10 | main | INFO | Update status: 0
+2023-09-29  16:32:55 | main | INFO | Update status: 0
+2023-09-29  16:35:10 | main | INFO | Update status: 0
+2023-09-29  16:38:45 | main | INFO | Update status: 0
+2023-09-29  16:42:58 | main | SEVERE | Oops! An error occurred Text '' could not be parsed at index 0
+2023-09-29  16:44:33 | main | INFO | Update status: 0
+2023-09-29  16:45:14 | main | SEVERE | Oops! An error occurred null
+2023-09-29  16:50:55 | main | INFO | Update status: 0
+2023-09-29  16:52:22 | main | INFO | Update status: 0
+2023-09-29  19:21:49 | main | INFO | Update status: 0
+2023-09-29  19:26:49 | main | SEVERE | Database operation failure You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 12023-09-29  19:34:51 | main | INFO | Update status: 02023-09-29  19:35:30 | main | SEVERE | Oops! An error occurred null2023-09-29  19:41:33 | main | INFO | Update status: 0
+2023-09-29  19:42:17 | main | SEVERE | Oops! An error occurred null
+2023-09-29  19:58:17 | main | INFO | Update status: 0
+2023-09-29  19:58:58 | main | SEVERE | Oops! An error occurred null
+2023-09-29  20:03:10 | main | INFO | Update status: 0
+2023-09-29  20:04:48 | main | SEVERE | Oops! An error occurred null
+2023-09-29  20:08:06 | main | INFO | Update status: 0
+2023-10-01  12:37:03 | main | INFO | Update status: 0
+2023-10-01  12:38:06 | main | SEVERE | Oops! An error occurred null
+2023-10-01  12:38:37 | main | INFO | Update status: 0
+2023-10-01  12:39:05 | main | SEVERE | Oops! An error occurred java.lang.NullPointerException
+2023-10-01  12:40:03 | main | INFO | Update status: 0
+2023-10-01  12:43:13 | main | INFO | Update status: 0
+2023-10-01  12:43:50 | main | INFO | Update status: 0
+2023-10-01  12:45:26 | main | INFO | Update status: 0
+2023-10-01  12:45:48 | main | SEVERE | Oops! An error occurred java.lang.NullPointerException
+2023-10-01  12:46:49 | main | INFO | Update status: 0
+2023-10-01  12:47:23 | main | INFO | Update status: 0
+2023-10-01  12:47:44 | main | INFO | Update status: 0
+2023-10-01  12:50:13 | main | INFO | Update status: 0
+2023-10-01  12:50:51 | main | INFO | Number of Rows1

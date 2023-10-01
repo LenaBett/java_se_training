@@ -7,7 +7,8 @@ public class Pos {
 
 
     public static void main(String[] args) {
-        Pos pos = new Pos(); // instance of the App class
+
+        Pos pos = new Pos();
 
         if (!pos.loginAttempt()) {
             return;
@@ -15,10 +16,11 @@ public class Pos {
 
         MainMenu mainMenu = new MainMenu(scanner, new Shop());
         mainMenu.displayMenu();
-
     }
     public boolean loginAttempt() {
         Login login = new Login();
         return login.login();
     }
+
+
 }

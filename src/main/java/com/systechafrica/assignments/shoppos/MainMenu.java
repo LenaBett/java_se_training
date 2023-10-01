@@ -70,7 +70,7 @@ public class MainMenu {
     private void makePayment() {
         if(receipt.receiptIsEmpty()){
             System.out.println("No items added. Please add items.");
-
+            addReceiptItem();
         }else {
             System.out.println("Please Enter Valid Payment Amount: ");
             double payment = scanner.nextDouble();

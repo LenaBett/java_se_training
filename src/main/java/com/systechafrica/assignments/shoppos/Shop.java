@@ -8,6 +8,7 @@ public class Shop {
     private final List<Item> inventory;
 
 
+
     public Shop() {
         List<Item> items = new ArrayList<>();
         items.add(new Item("a-1", "Apple", 25));
@@ -16,6 +17,9 @@ public class Shop {
         items.add(new Item("b-1", "Banana", 3.33));
         items.add(new Item("b-2", "Basket", 40.5));
         items.add(new Item("b-3", "Bacon", 400));
+
+        items.forEach(Item::save);
+
 
         inventory = items;
     }
@@ -26,4 +30,5 @@ public class Shop {
                 .findAny()
                 .orElse(null);
     }
+
 }
