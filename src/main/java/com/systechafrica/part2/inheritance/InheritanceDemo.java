@@ -1,6 +1,6 @@
 package com.systechafrica.part2.inheritance;
 
-import com.systechafrica.part2.inheritance.CompanySetup.SoftwareEngineer;
+import com.systechafrica.part2.inheritance.companysetup.SoftwareEngineer;
 
 import java.util.logging.Logger;
 
