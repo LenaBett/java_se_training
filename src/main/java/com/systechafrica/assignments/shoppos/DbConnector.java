@@ -11,7 +11,7 @@ public class DbConnector implements Connector {
         try {
             String connectionUrl = "jdbc:mysql://localhost:3306/javase";
             String user = "root";
-            String password = "Lena2540";
+            String password = "lena2540";
             connection = DriverManager.getConnection(connectionUrl, user, password);
 
 

@@ -18,7 +18,7 @@ public class Order {
 
     public double calculateTotal() {
         double totalAmount = 0;
-        for (var item : items) {
+        for (Item item : items) {
             totalAmount += item.getPrice();
         }
         return totalAmount;
@@ -27,7 +27,7 @@ public class Order {
     public void displayOrder() {
         System.out.println("Pay now for ");
 
-        for (var item : items) {
+        for (Item item : items) {
             System.out.println(item.getName() + "............." + item.getPrice());
         }
         System.out.println("**************************************");

@@ -11,8 +11,8 @@ public class InheritanceDemo {
         InheritanceDemo app = new InheritanceDemo();
 
         LOGGER.info("app => " + app.hashCode());
-        LOGGER.info("app => " + app.toString());
-        LOGGER.info("app => " + app.getClass().getPackageName());
+        LOGGER.info("app => " + app);
+        LOGGER.info("app => " + app.getClass().getPackage());
 
         app.companySetup();
     }

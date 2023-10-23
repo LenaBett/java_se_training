@@ -1,5 +1,7 @@
 package com.systechafrica.assignments.shoppos;
 
+import com.systechafrica.assignments.shoppos.ReceiptItem;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,7 +16,7 @@ public class Receipt {
 
     public Double computeTotalAmount (){
         double totalAmount = 0.0;
-        for (var item : items) {
+        for (ReceiptItem item : items) {
             totalAmount += item.getQuantity() * item.getUnitPrice();
         }
 
@@ -38,7 +40,7 @@ public class Receipt {
     public void printReceipt() {
         System.out.println("Item Code    Quantity    Unit Price  Total Value");
 
-        for (var item : items) {
+        for (ReceiptItem item : items) {
             double totalValue = item.getQuantity() * item.getUnitPrice();
             System.out.println(item.getCode() + "\t" + item.getQuantity() + "\t" + item.getUnitPrice() + "\t" + totalValue);
 
